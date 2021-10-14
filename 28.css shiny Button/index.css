@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626FF;
+}
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100px;
+	width: 300px;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: cursive;
+	color: white;
+	border-radius: 50px;
+	background: linear-gradient(45deg,#B200FFFF,deeppink,purple);
+	box-shadow: 1px 1px 60px purple;
+	cursor: pointer;
+	overflow: hidden;
+}
+span{
+	display: block;
+	position: absolute;
+	height: 100px;
+	width: 50px;
+	right: 100%;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+div:hover span{
+	animation: shine 0.7s linear;
+}
+@keyframes shine{
+	0%{
+		left: 10%;
+		transform: skew(10deg);
+	}
+	50%{
+		left: 100%;
+		transform: skew(10deg);
+	}
+	75%{
+		right: 10%;
+		transform: skew(10deg);
+	}
+	100%{
+		right: 100%;
+		transform: skew(10deg);
+	}
+
+}
